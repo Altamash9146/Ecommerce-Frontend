@@ -5,12 +5,14 @@ import { useSelector } from 'react-redux'
 import {useIncreaseCartProductMutation,useDecreaseCartProductMutation,useRemoveFromCartMutation} from '../../Services/AppApi'
 import { Alert, Container,Row,Col, Table } from 'react-bootstrap'
 import CheckoutForm from './Checkout/CheckoutForm'
+import { useNavigate } from 'react-router-dom';
 
 const Publishable_key = 'pk_test_51Ng2IJSDW3KwNhr0QojaHIpV4nnqsSESHSR1vJf7l75NZDZMkrYfl5eldkmLFKbel32OoprMSu1BHQ8MywSGmVUi006CBey9CO'
 
 const stripePromise = loadStripe(Publishable_key)
 
 const CartPage = () => {
+    const navi = useNavigate()
   const user = useSelector((state) => state.user);
   const products = useSelector((state) => state.products);
   const userCartObj = user.cart;
@@ -28,6 +30,9 @@ const CartPage = () => {
       }
   }
 
+  const Gotohome = ()=>{
+    navi('/')
+  }
  
 
   return (
@@ -35,7 +40,7 @@ const CartPage = () => {
    <Container style={{ minHeight: "95vh" }} className="cart-container">
             <Row>
                 <Col>
-                    <h1 className="pt-2 h3">Shopping cart</h1>
+                    <h1 className="pt-2 h3" onClick={Gotohome}><span>←</span>Shopping cart</h1>
                     {cart.length === 0 ? (
                         <Alert variant="info">Shopping cart is empty. Add products to your cart</Alert>
                     ) : (

@@ -58,7 +58,7 @@
 }
 
 .Desktop-Navigation-Container a{
-    height: 2rem;
+    height: 5rem;
     color: black;
     text-decoration: none;
 }
@@ -66,7 +66,7 @@
 .Desktop-Navigation-Container a.active {
     color: black;
     text-decoration: none;
-    color:#333333   ;
+    color:#333333;
 }
 
 .Navigation-Container{
