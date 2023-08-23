@@ -1,9 +1,9 @@
 .footer {
-    position: absolute;
-    top: 270%;
-    left: 0;
-    width: 100%;
-    background-color: white;
+  position: relative;
+  top: 670px;
+  left: 0;
+  width: 100%;
+  background-color: white;
   }
   
   .footer-container {

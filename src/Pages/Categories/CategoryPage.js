@@ -66,7 +66,8 @@ const CategoryPage = () => {
   </div>
 
   <div className='filter-container'>
-    <input
+
+   <input
       type='text'
       placeholder='Search for products'
       className='Category-Search-Bar'
@@ -76,13 +77,14 @@ const CategoryPage = () => {
 
 
     <div className='Category-Search-Image-Container'>
-      <img
+      {/* <img
         src={SearchIcon}
         alt='Not-Found'
         className='Category-Search-Image'
         onClick={focus}
-      />
-    </div>
+      /> */}
+ 
+   </div>
     {/* {console.log(productsSearch)} */}
     {productsSearch.length === 0 ? (
 
