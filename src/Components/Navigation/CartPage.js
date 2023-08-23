@@ -40,7 +40,9 @@ const CartPage = () => {
    <Container style={{ minHeight: "95vh" }} className="cart-container">
             <Row>
                 <Col>
-                    <h1 className="pt-2 h3" onClick={Gotohome}><span>←</span>Shopping cart</h1>
+                    <h1 className="pt-2 h3" onClick={Gotohome} style={{
+                        cursor:'pointer'
+                    }}><span>←</span>Shopping cart</h1>
                     {cart.length === 0 ? (
                         <Alert variant="info">Shopping cart is empty. Add products to your cart</Alert>
                     ) : (
