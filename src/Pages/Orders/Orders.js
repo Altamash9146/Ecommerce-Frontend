@@ -4,11 +4,13 @@ import { Badge, Container, Table } from 'react-bootstrap';
 import './Orders.css';
 import axios from '../../Axios';
 import Loading from '../Products/Loading';
+import {useNavigate} from 'react-router-dom'
 
 function Orders() {
     const user = useSelector((state) => state.user);
     const [orders, setOrders] = useState([]);
     const [loading, setLoading] = useState(false);
+    const navi = useNavigate()
 
     useEffect(() => {
         setLoading(true);
@@ -32,7 +34,13 @@ function Orders() {
         return <h1 className="text-center pt-3">No orders yet</h1>;
     }
 
+    const gotohome = ()=>{
+        navi('/')
+    }
+
     return (
+       <>
+        <h1 onClick={gotohome} style={{cursor:'pointer'}}>←</h1>
         <Container>
             <h1 className="text-center">Your orders</h1>
             <Table responsive striped bordered hover>
@@ -61,6 +69,7 @@ function Orders() {
                 </tbody>
             </Table>
         </Container>
+        </>
     );
 }
 
