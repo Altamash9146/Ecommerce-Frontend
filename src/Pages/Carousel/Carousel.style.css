@@ -1,0 +1,41 @@
+.Carousel-Container{
+    position: absolute; top: 20%;
+}
+
+
+@media screen and (min-width:330px) and (max-width:950px){
+
+.Carousel-Container{
+    position: absolute; top: 15%;
+}
+
+.Carousel-Heading{
+    position: relative;
+    top: -14px;
+    font-size: medium;
+    width: 100px;
+}
+
+.Carousel-desc{
+    display: none;
+}
+}
+  
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .Carousel-Container{
+        position: absolute;
+        top: 9%;
+    }
+
+    .Carousel-desc{
+        display: block;
+    }
+
+    .Carousel-Heading{
+        display: none;
+    }
+}
+
+  
+  

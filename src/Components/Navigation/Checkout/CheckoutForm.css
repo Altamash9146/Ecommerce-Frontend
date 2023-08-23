@@ -1,0 +1,58 @@
+.cart-payment-container{
+  border:  none;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(192, 175, 213, 0.809);
+
+}
+
+.Form-Labels{
+  font-size: small;
+  font-weight: bold;
+}
+
+.Checkout-Input-Bar{
+    border: 2px solid rgb(136, 134, 134);
+    border-radius: 5px;
+    width: 380px;
+    margin: 9px 0px;
+    font-size: small;
+    padding: 5px;
+}
+
+.Checkout-Input-Bar:focus{
+  box-shadow: 2px 2px 5px 0 cyan;
+}
+
+.Checkout-Form-Button{
+  background-color: yellow;
+  margin-top: 5px; 
+  margin-bottom: 8px;
+  width: 380px;
+  border-radius: 5px;
+  border: none;
+  font-size: small;
+  padding: 5px;
+}
+
+@media screen and (min-width:330px) and (max-width:950px){
+    .responsive-checkout-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart-payment-container{
+      width: 300px;
+    }
+
+    .Checkout-Input-Bar,.Checkout-Form-Button{
+        width: 280px;
+    }
+}

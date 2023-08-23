@@ -1,0 +1,96 @@
+@media screen and (min-width:330px) and (max-width:950px){
+.Hamburger{
+    display: block;
+    position: relative;
+    top: 58px;
+    left: 11px;
+    z-index: 1;
+    position: fixed;
+}
+
+.Navbar-Container{
+    top: -1px;
+   height: 90px;
+   width: 100%;
+}
+
+.heading{
+    position: relative;
+    top: 11px;
+    left: 3%;
+    font-size: 20px;
+    width: 168px;
+}
+
+.Search-Bar{
+    position: relative; left: 7%; top: 40px;
+    width: 90%;
+    padding: 3px;
+}
+
+.Search-Image-Container{
+    z-index: 1;
+    position: relative;
+    left: -0.5rem; top: 2.6rem;
+}
+
+.d-container{
+    display: none;
+}
+
+ .Navigation-Container{
+    display: block;
+    position: absolute;
+    top: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    height: 212px;
+}
+
+.home{
+text-decoration: none;
+color: brown;
+}
+
+.Navigation-Containerr a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.Navigation-Container a.active {
+    color: black;
+    text-decoration: none;
+    color:brown;
+    
+}
+
+
+
+hr{
+    border-bottom: 0.8px solid aliceblue;
+    z-index: 1;
+    width: 100%;
+}
+
+.Shopping-cart{
+    position: fixed;
+    top: 12px;
+    left: 274px;
+}
+
+.User-Icon{
+    position: fixed;
+    top: 11px;
+    left: 244px;
+}
+
+#cartcount{
+    left: 76%;
+    transform: translateX(-76%);
+}
+}

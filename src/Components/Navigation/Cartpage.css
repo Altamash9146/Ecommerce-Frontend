@@ -1,0 +1,33 @@
+.toast-container {
+    position: absolute;
+    top: 0; /* Adjust the value to position the toast vertically */
+    right: 0; /* Center the toast horizontally */
+}
+
+.cart-table{
+    position: relative;
+    top: 4px;
+    border-radius: 8px;
+}
+
+.fa-plus-circle,
+.fa-minus-circle{
+    cursor: pointer;
+    display: inline-block;
+}
+
+.fa-plus-circle{
+    margin-left: 5px;
+}
+
+.fa-minus-circle{
+    margin-right: 5px;
+}
+
+
+.table-responsive-sm{
+    max-height: 70vh;
+    overflow: scroll;
+}
+
+
