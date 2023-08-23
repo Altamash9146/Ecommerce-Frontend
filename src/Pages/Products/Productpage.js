@@ -71,7 +71,7 @@ const Productpage = ({_id}) => {
         fontSize:'30px'
     }} onClick={GotoHome}
     >
-        Urban Hunters
+        <span>←</span>&nbsp; &nbsp;Urban Hunters
     </h1>
     <Container className='pt-4' style={{
                             position:'relative'
