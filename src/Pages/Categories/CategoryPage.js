@@ -3,7 +3,7 @@ import axios from '../../Axios'
 import {Container, Row, Col} from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import Loading from '../Products/Loading'
-import  SearchIcon from  'D:/E-Commerce Frontend/client/src/Components/Navigation/istockphoto-1136192849-612x612.jpg'
+// import  SearchIcon from  'D:/E-Commerce Frontend/client/src/Components/Navigation/istockphoto-1136192849-612x612.jpg'
 import './Category.css'
 import ProductPreview  from '../Products/ProductPreview'
 
@@ -47,9 +47,9 @@ const CategoryPage = () => {
 
     const InputRef = useRef()
 
-  function focus(){
-    InputRef.current.focus()
-  }
+  // function focus(){
+  //   InputRef.current.focus()
+  // }
 
   return (
    <>
