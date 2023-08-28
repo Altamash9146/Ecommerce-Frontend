@@ -26,9 +26,9 @@ const Similarproduct = ({_id,category,name,pictures}) => {
           />
 )}
 
-            <Card.Body>
+            <Card.Body className='card-category'>
                 <Card.Title>{name}</Card.Title>
-                <Badge bg='warning' text='dark' >
+                <Badge bg='warning' text='dark'>
                                     {category}
                 </Badge>
             </Card.Body>

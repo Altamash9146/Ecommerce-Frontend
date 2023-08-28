@@ -6,7 +6,10 @@ import Loading from '../Products/Loading'
 // import  SearchIcon from  'D:/E-Commerce Frontend/client/src/Components/Navigation/istockphoto-1136192849-612x612.jpg'
 import './Category.css'
 import ProductPreview  from '../Products/ProductPreview'
-
+import Navigation from '../../Components/Navigation/Header'
+import FontAwesome from '../../Components/Navigation/FontAwesome'
+import RouteLinks from '../../Components/Navigation/RouteLinks'
+import {useNavigate} from 'react-router-dom'
 
 const CategoryPage = () => {
 
@@ -15,7 +18,7 @@ const CategoryPage = () => {
     const [loading, setLoading] = useState(false)
     const [products, setProduct] = useState([])
     const [searchTerm, setsearchTerm] = useState('')
-
+    const navi = useNavigate()
 
     useEffect(()=>{
         setLoading(true)
@@ -51,9 +54,18 @@ const CategoryPage = () => {
   //   InputRef.current.focus()
   // }
 
+  const gotohome = ()=>{
+    navi('/')
+}
+
+
   return (
    <>
    <div className='Category-Page-Container'>
+    <h4 style={{cursor:'pointer', fontFamily:"Georgia, 'Times New Roman', Times, serif"}} onClick={gotohome} >← Urban Hunters</h4>
+    {/* <Navigation/> */}
+    {/* <FontAwesome/> */}
+    {/* <RouteLinks/> */}
   <div className={`pt-3 ${category}-banner-container category-banner-container`}>
     <h1
       style={{

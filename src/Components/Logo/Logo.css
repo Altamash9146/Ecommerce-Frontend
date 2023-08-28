@@ -1,0 +1,22 @@
+.heading {
+    position: relative; top: 23%; left: 1%;
+    color: black;
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    transition: transform 0.2s ease-in-out;
+}
+
+.heading:hover {
+    transform: scaleY(1.1); 
+    color: red;
+}
+
+@media screen and (min-width:330px) and (max-width:950px){
+    .heading{
+        position: relative;
+        top: 11px;
+        left: 3%;
+        font-size: 20px;
+        width: 168px;
+    }
+}

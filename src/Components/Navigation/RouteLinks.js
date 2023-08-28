@@ -16,10 +16,10 @@ const RouteLinks = () => {
   };
 
   return (
-    <div className='d-container'>
+    <div className='d-container main_desk'>
  
-
       <div className="Desktop-Navigation-Container">
+      <div class="Navigation-Grid">
         <NavLink to={"/"} activeclassname="active"
          onMouseOver={() => setShowHomeSubItems(true)} onClick={handleSubitemsClick} onMouseLeave={() => setShowHomeSubItems(false)}
          >
@@ -38,6 +38,7 @@ const RouteLinks = () => {
                 onMouseOver={() => setShowWatchSubItems(true)} onClick={handleSubitemsClick} onMouseLeave={() => setShowWatchSubItems(false)}>
                   Watch</NavLink>
         </div>
+        </div>
 
 
  
@@ -45,11 +46,11 @@ const RouteLinks = () => {
    {
     showIphoneSubItems && 
     <div className='Iphone-Hover' onMouseLeave={() => setShowIphoneSubItems(false)} onMouseOver={() => setShowIphoneSubItems(true)}>
-      <NavLink to={'/product/64e36ca1c3f5cfaed9a937b3'} className='Hover-Text'>iPhone X</NavLink>
-      <NavLink to={'/product/64e371c8c3f5cfaed9a9384b'} className='Hover-Text'>iPhone 11</NavLink>
-      <NavLink to={'/product/64e3772ac3f5cfaed9a9385a'}className='Hover-Text'>iPhone 12</NavLink>
-      <NavLink to={'/product/64e377a5c3f5cfaed9a93869'}className='Hover-Text'>iPhone 13</NavLink>
-      <NavLink to={'/product/64e37a13c3f5cfaed9a93878'} className='Hover-Text'>iPhone 14</NavLink>
+      <NavLink to={'/product/64e36ca1c3f5cfaed9a937b3'} className='Hover-Text'>Iphone X</NavLink>
+      <NavLink to={'/product/64e371c8c3f5cfaed9a9384b'} className='Hover-Text'>Iphone 11</NavLink>
+      <NavLink to={'/product/64e3772ac3f5cfaed9a9385a'}className='Hover-Text'>Iphone 12</NavLink>
+      <NavLink to={'/product/64e377a5c3f5cfaed9a93869'}className='Hover-Text'>Iphone 13</NavLink>
+      <NavLink to={'/product/64e37a13c3f5cfaed9a93878'} className='Hover-Text'>IPhone 14</NavLink>
     </div>
    }
 
@@ -80,10 +81,54 @@ const RouteLinks = () => {
     {
       showHomeSubItems && 
       <div className='Home-Hover' onMouseLeave={() => setShowHomeSubItems(false)} onMouseOver={() => setShowHomeSubItems(true)}>
+      <div>
       <NavLink to={'/category/iphone'}className='Hover-Text'>IPhone </NavLink>
-      <NavLink to={'/category/laptop'}className='Hover-Text'>Laptops</NavLink>
-      <NavLink to={'/category/watch'}className='Hover-Text'>Watches</NavLink>
+         <br/>
+      <NavLink to={'/product/64e36ca1c3f5cfaed9a937b3'} className='Hover-Text'>Iphone X</NavLink>
+         <br/>
+      <NavLink to={'/product/64e371c8c3f5cfaed9a9384b'} className='Hover-Text'>Iphone 11</NavLink>
+         <br/>
+      <NavLink to={'/product/64e3772ac3f5cfaed9a9385a'}className='Hover-Text'>Iphone 12</NavLink>
+         <br/>
+      <NavLink to={'/product/64e377a5c3f5cfaed9a93869'}className='Hover-Text'>IPhone 13</NavLink>
+         <br/>
+      <NavLink to={'/product/64e37a13c3f5cfaed9a93878'} className='Hover-Text'>IPhone 14</NavLink>
+        </div>
 
+      <div>
+      <NavLink to={'/category/laptop'}className='Hover-Text'>Laptops</NavLink>
+      <br/>
+      <NavLink to={'/product/64e3860ec3f5cfaed9a939b9'} className='Hover-Text'>Acer Chromebook</NavLink>
+         <br/>
+      <NavLink to={'/product/64db57e4ebea908759b0d4cf'} className='Hover-Text'>Apple Macbook</NavLink>
+         <br/>
+      <NavLink to={'/product/64de11f6923edc5863cfbe30'} className='Hover-Text'>ASUS Zenbook </NavLink>
+         <br/>
+      <NavLink to={'/product/64dcbe9514940fd4e6074164'} className='Hover-Text'> Dell XPS 13</NavLink>
+         <br/>
+      <NavLink to={'/product/64de2a73923edc5863cfbebd'} className='Hover-Text'>HP ENVY x360</NavLink>
+      
+      </div>
+      
+      
+      <div>
+      <NavLink to={'/category/watch'}className='Hover-Text'>Watches</NavLink>
+      <br/>
+      <NavLink to={'/product/64dbb463064a819664520e9a'} className='Hover-Text'>Titan Neo IV</NavLink>
+      <br/>
+      <NavLink to={'/product/64e38d17c3f5cfaed9a93a76'} className='Hover-Text'>Rolex Pearl</NavLink>
+      <br/>
+      <NavLink to={'/product/64e38ee2c3f5cfaed9a93aa9'} className='Hover-Text'>Fastrack-Exuberant</NavLink>
+      <br/>
+      <NavLink to={'/product/64e390a7c3f5cfaed9a93abe'} className='Hover-Text'>Rolex Daytona</NavLink>
+      <br/>
+      <NavLink to={'/product/64e39180c3f5cfaed9a93acd'} className='Hover-Text'>Apple Series 3</NavLink>
+      
+
+        </div>
+     
+       
+      
         </div>
     }
     

@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import SearchIcon from 'D:/E-Commerce Frontend/client/src/Components/Navigation/istockphoto-1136192849-612x612.jpg';
 import './ResNav.style.css'
+import Logo from '../Logo/Logo';
 
 const Navigation = () => {
   const InputRef = useRef();
@@ -18,11 +19,15 @@ const Navigation = () => {
     }
   };
 
+  function Gotohome(){
+    navigate('/')
+  }
+
   return (
     <>
       <div className='Navbar-Container'>
-        <h1 className='heading'>Urban Hunters</h1>
-
+      {/* <h1 className='heading' onClick={Gotohome}><NavLink to={"/product/64db57e4ebea908759b0d4cf"} >Urban Hunters</NavLink></h1> */}
+        <Logo/>
         <div className='Search-Bar-Container'>
           <input
             id='searchInput'
