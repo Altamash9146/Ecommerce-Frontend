@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import SearchIcon from 'D:/E-Commerce Frontend/client/src/Components/Navigation/istockphoto-1136192849-612x612.jpg';
+import SearchIcon from "../Navigation/istockphoto-1136192849-612x612.jpg"
 import './ResNav.style.css'
 import Logo from '../Logo/Logo';
 
