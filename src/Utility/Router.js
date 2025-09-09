@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { useSelector } from 'react-redux'
 import { BrowserRouter,Routes,Route} from 'react-router-dom'
 import { Signup,Login } from '../Components'
-import Home from '../Pages/Home/Home'
-import Newproduct from '../Pages/Products/Newproduct'
-import Productpage from '../Pages/Products/Productpage'
-import CategoryPage from '../Pages/Categories/CategoryPage'
-import ScrolltoTop from '../Pages/Scroller/ScrolltoTop'
-import CartPage from '../Components/Navigation/CartPage'
-import SearchResults from '../Components/Navigation/SearchResults'
-import Orders from '../Pages/Orders/Orders'
-import AdminDashboard from '../Pages/Admin/AdminDashboard/AdminDashboard'
-import EditProduct from '../Pages/Products/EditProducts'
+
+const Home = React.lazy(() => import('../Pages/Home/Home'));
+const Newproduct = React.lazy(() => import('../Pages/Products/Newproduct'));
+const Productpage = React.lazy(() => import('../Pages/Products/Productpage'));
+const CategoryPage = React.lazy(() => import('../Pages/Categories/CategoryPage'));
+const ScrolltoTop = React.lazy(() => import('../Pages/Scroller/ScrolltoTop'));
+const CartPage = React.lazy(() => import('../Components/Navigation/CartPage'));
+const SearchResults = React.lazy(() => import('../Components/Navigation/SearchResults'));
+const Orders = React.lazy(() => import('../Pages/Orders/Orders'));
+const AdminDashboard = React.lazy(() => import('../Pages/Admin/AdminDashboard/AdminDashboard'));
+const EditProduct = React.lazy(() => import('../Pages/Products/EditProducts'));
 
 const Routing = () => {
   const user = useSelector((state) => state.user);
@@ -19,6 +20,7 @@ const Routing = () => {
   return (
    <>
    <BrowserRouter>
+    <Suspense fallback={<div>Loading...</div>}>
     <ScrolltoTop/>
 
     <Routes>
@@ -47,6 +49,7 @@ const Routing = () => {
             <Route path='/category/:category' element={<CategoryPage/>}/>
    
     </Routes>
+    </Suspense>
    </BrowserRouter>
    </>
   )
