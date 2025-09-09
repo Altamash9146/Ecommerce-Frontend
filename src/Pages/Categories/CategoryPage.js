@@ -1,15 +1,11 @@
 import React, { useEffect, useState,useRef } from 'react'
 import axios from '../../Axios'
 import {Container, Row, Col} from 'react-bootstrap'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import Loading from '../Products/Loading'
 // import  SearchIcon from  'D:/E-Commerce Frontend/client/src/Components/Navigation/istockphoto-1136192849-612x612.jpg'
 import './Category.css'
 import ProductPreview  from '../Products/ProductPreview'
-import Navigation from '../../Components/Navigation/Header'
-import FontAwesome from '../../Components/Navigation/FontAwesome'
-import RouteLinks from '../../Components/Navigation/RouteLinks'
-import {useNavigate} from 'react-router-dom'
 
 const CategoryPage = () => {
 
@@ -63,9 +59,6 @@ const CategoryPage = () => {
    <>
    <div className='Category-Page-Container'>
     <h4 style={{cursor:'pointer', fontFamily:"Georgia, 'Times New Roman', Times, serif"}} onClick={gotohome} >← Urban Hunters</h4>
-    {/* <Navigation/> */}
-    {/* <FontAwesome/> */}
-    {/* <RouteLinks/> */}
   <div className={`pt-3 ${category}-banner-container category-banner-container`}>
     <h1
       style={{

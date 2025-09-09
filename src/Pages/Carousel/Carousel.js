@@ -2,7 +2,6 @@ import React from 'react'
 import './Carousel.style.css'
 import Carousel from 'react-bootstrap/Carousel';
 import c1 from './corousel_1.png'
-import c2 from './corousel_2.png'
 import c3 from './corousel_3.png'
 import { useNavigate } from 'react-router-dom';
 

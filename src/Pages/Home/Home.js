@@ -25,7 +25,7 @@ const Home = () => {
   useEffect(() => {
     axios.get("/products")
     .then(({ data }) => dispatch(updateProducts(data)));
-}, []);
+}, [dispatch]);
   
 
   return (

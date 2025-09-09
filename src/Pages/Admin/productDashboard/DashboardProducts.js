@@ -8,7 +8,7 @@ import { useDeleteProductMutation } from '../../../Services/AppApi'
 const DashboardProducts = () => {
     const products = useSelector((state) => state.products)
     const user = useSelector((state) => state.user)
-    const [deleteProduct, {isLoading, isSuccess, }]  = useDeleteProductMutation()
+    const [deleteProduct, {isLoading}]  = useDeleteProductMutation()
     // for removing the product
     
     const handleDelete = (id)=>{

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from '../../../Axios'
-import { Badge,Table,Button, Modal } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import Loading from '../../Products/Loading'
 
 function ClientDashboard() {
@@ -48,4 +48,3 @@ function ClientDashboard() {
 }
 
 export default ClientDashboard;
-

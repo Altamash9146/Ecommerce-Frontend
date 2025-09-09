@@ -1,6 +1,5 @@
 import React from 'react'
 import {Container,Tab,Row,Col,Nav} from 'react-bootstrap'
-import instance from '../../../Axios'
 import './AdminDashboard.css'
 import DashboardProducts from '../productDashboard/DashboardProducts'
 import OrdersDashboard from '../OrdersDashboard.js/OrdersDashboard'
